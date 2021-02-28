@@ -1,0 +1,153 @@
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.5rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+bottom {
+  font-size: 1.6rem;
+}
+#root {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-auto-columns: 1fr;
+  height: 100%;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  color: burlywood;
+  padding: 1rem;
+  background-color: bisque;
+}
+
+.header-links {
+  color: coral;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Homepage */
+
+.books {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books li {
+  height: 25rem;
+  border-bottom: .1rem beige;
+  padding: 0;
+  list-style-type: none;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.book-name {
+  font-size: 2rem;
+}
+.book-author {
+  font-size: 1.5rem;
+}
+.book-available {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.book-image {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+/* Book Screen */
+
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-items: flex-start;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.details-image {
+  flex: 1 2 20rem;
+}
+
+.details-image img {
+  max-width: 50rem;
+  widows: 10000;
+}
+
+.details-info {
+  flex: 2 1 20rem;
+}
+
+/* Signin Screen */
+/* forms  */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  padding: 1rem;
+  border: .1rem #282c34 solid;
+  border-radius: .5rem;
+}
+
+.form-container li {
+  flex-direction: column;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border: .1rem #282c34 solid;
+  border-radius: .5rem;
+}
